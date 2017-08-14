@@ -126,6 +126,7 @@ static bool getNumber(const char *str, int *number)
                 char c = str[i];
 
                 if (c >= '0' && c <= '9') continue;
+                if (c >= 'a' && c <= 'f') continue;
                 if (c >= 'A' && c <= 'F') continue;
 
                 return false;
